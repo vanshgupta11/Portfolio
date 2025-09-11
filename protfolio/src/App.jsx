@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Loader from './Components/Loader'
+import Hero from './Components/Hero'
+
 
 function App() {
 // const [isloading , setLoading] = useState(true)
@@ -12,8 +14,9 @@ function App() {
 //     fake();
 // },[])
   return (
-    <main>
-      <h1 className="text-5xl  font-bold font-robert-regular text-blue-100">hello</h1>
+    
+    <main className='relative min-h-screen w-screen overflow-x-hidden'>
+      <Hero />
     </main>
   )
 }
