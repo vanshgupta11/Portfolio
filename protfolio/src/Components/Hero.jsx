@@ -2,15 +2,13 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className='relative h-dvh w-screen overflow-x-hidden'>
-        <div id="video-frame" className='relative h-dvh z-10 w-screen overflow-hidden rounded-lg bg-blue-75'></div>
-        <div>
-            <div className='mask-clip-path'>
-
-            </div>
-        </div>
-    
-    
+    <div className='h-dvh w-full font-zentry bg-black flex '>
+      <div className=' h-[95%] w-[45%]'>
+        <h1 className='text-[8vw] text-white '>VANSH</h1>
+      </div>
+      <div className="video-container h-[95%] w-[55%]">
+          <video src="/videos/landing.mp4" autoPlay muted loop></video>
+      </div>
     </div>
   )
 }
