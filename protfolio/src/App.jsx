@@ -13,7 +13,7 @@ function App() {
 // },[])
   return (
     <main>
-      <h1 className="text-5xl text-orange-500 font-bold font-circular-web">hello</h1>
+      <h1 className="text-5xl  font-bold font-robert-regular text-blue-100">hello</h1>
     </main>
   )
 }
