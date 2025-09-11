@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
 @layer base{
     @font-face{
         font-family: 'circular-web';
@@ -27,6 +28,7 @@
   --font-circular-web: "circular-web", sans-serif;
   --font-robert-medium: "robert-medium", sans-serif;
   --font-robert-regular: "robert-regular", sans-serif;
+   --font-inter: "Inter", "sans-serif";
   --color-blue-50: #dfdff0;
   --color-blue-75: #dfdff2;
   --color-blue-100: #f0f2fa;
@@ -38,12 +40,12 @@
 }
 body{
     font-family: 'robert-regular' , 'sans-serif';
-    width: 100dvw;
+    
     background-color: black;
-    overflow-x: hidden;
+    
 } 
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */

@@ -3,6 +3,7 @@ import Loader from './Components/Loader'
 import Hero from './Components/Hero'
 import Navbar from './Components/Navbar'
 import Spline from './Components/Spline';
+import About from './Components/About';
 
 
 function App() {
@@ -21,7 +22,8 @@ useEffect(()=>{
     <div>{isloading?<Loader/>:(<div>
       <Navbar/>
       <Hero/>
-      <Spline />
+      <About />
+      
       </div>)}</div>
   )
 }
