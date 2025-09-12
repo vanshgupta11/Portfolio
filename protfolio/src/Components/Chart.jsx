@@ -1,27 +1,17 @@
 // App.jsx
 import React from "react";
-import { Line } from "react-chartjs-2";
+import { PolarArea } from "react-chartjs-2";
 import {
   Chart as ChartJS,
-  LineElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Title,
+  RadialLinearScale,
+  ArcElement,
   Tooltip,
   Legend,
+  Title,
 } from "chart.js";
 
-// Register required components
-ChartJS.register(
-  LineElement,
-  CategoryScale,
-  LinearScale,
-  PointElement,
-  Title,
-  Tooltip,
-  Legend
-);
+// Register required components for polar area
+ChartJS.register(RadialLinearScale, ArcElement, Tooltip, Legend, Title);
 
 export default function Chart() {
   const data = {
@@ -29,11 +19,16 @@ export default function Chart() {
     datasets: [
       {
         label: "%",
-        data: [98, 80, 55, 38, 75 ],
-        borderColor: "rgba(75,192,192,1)",
-        backgroundColor: "rgba(250,20,25)",
-        tension:1.5,
-        fill: true,
+        data: [98, 80, 55, 38, 75],
+        backgroundColor: [
+          "rgba(255, 250, 0,0.7 )",
+          "rgba(54, 162, 235, 0.6)",
+          "rgba(255, 206, 86, 0.6)",
+          "rgba(75, 192, 192, 0.6)",
+          "rgba(153, 102, 255, 0.6)",
+        ],
+        borderColor: "rgba(255, 255, 255, 1)",
+        borderWidth: 2,
       },
     ],
   };
@@ -42,14 +37,19 @@ export default function Chart() {
     responsive: true,
     plugins: {
       legend: { display: true, position: "top" },
-      title: { display: true, text: "INTRESTS" },
+      title: { display: true, text: "INTERESTS" },
+    },
+    scales: {
+      r: {
+        ticks: { beginAtZero: true },
+      },
     },
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="w-full max-w-3xl bg-white p-6 rounded-xl shadow-lg">
-        <Line data={data} options={options} />
+    <div className="h-[80vh] w-full flex items-center justify-center bg-gray-100">
+      <div className="h-full bg-white p-6 rounded-xl shadow-lg">
+        <PolarArea data={data} options={options} />
       </div>
     </div>
   );

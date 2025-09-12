@@ -29,8 +29,8 @@ useEffect(()=>{
       <Navbar/>
       <Hero/>
       <About />
-      <Chart />
       <Skills />
+      <Chart />
       <Swiping />
       <Contact />
      
