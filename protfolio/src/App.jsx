@@ -11,6 +11,7 @@ import { Swiper } from 'swiper/react';
 import Swiping from './Components/swiping';
 
 
+
 function App() {
   
 const [isloading , setLoading] = useState(true)
@@ -32,6 +33,7 @@ useEffect(()=>{
       <Skills />
       <Swiping />
       <Contact />
+     
       </div>)}</div>
   )
 }

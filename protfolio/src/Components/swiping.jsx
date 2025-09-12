@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 
 export default function swiping() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900">
+    <div className="min-h-screen flex items-center justify-center bg-blacl">
       <div className="w-full max-w-4xl">
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
@@ -21,25 +21,20 @@ export default function swiping() {
           className="rounded-xl overflow-hidden shadow-lg"
         >
           <SwiperSlide>
-            <img
-              src="https://picsum.photos/id/1015/800/400"
-              alt="Slide 1"
-              className="w-full h-[400px] object-cover"
-            />
+            <div className="w-full h-[400px] object-cover">
+                <img src="" alt="" />
+                <div></div>
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="https://picsum.photos/id/1016/800/400"
-              alt="Slide 2"
-              className="w-full h-[400px] object-cover"
-            />
+            <div className="w-full h-[400px] object-cover">
+
+            </div>
           </SwiperSlide>
           <SwiperSlide>
-            <img
-              src="https://picsum.photos/id/1018/800/400"
-              alt="Slide 3"
-              className="w-full h-[400px] object-cover"
-            />
+            <div className="w-full h-[400px] object-cover">
+
+            </div>
           </SwiperSlide>
         </Swiper>
       </div>
