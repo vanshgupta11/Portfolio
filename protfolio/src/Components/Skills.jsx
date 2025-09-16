@@ -23,12 +23,16 @@ function Cylinder() {
 
 function Skills() {
   return (
-    <div className='h-[80vh] w-full flex items-center justify-center '>
+    <div className=' w-full flex items-center justify-center border-2 border-amber-500 h-[100vh]'>
 
+        <div className="skill_list w-[50%] h-[60vh] border-2 border-amber-500">
+
+        </div>
    
-    <div className='h-full w-[80%] animate-bounce' >
-        <Canvas camera={{ fov: 40}} >
-      <ambientLight intensity={0.6} />
+    <div className='h-[60vh] w-[49%] animate-bounce   flex items-center justify-cente' >
+        <Canvas camera={{ fov: 25}} >
+      <ambientLight intensity={0.5} />
+     
       <directionalLight position={[5, 5, 5]} intensity={10} />
       <Cylinder />
       <OrbitControls enableZoom={false} />
