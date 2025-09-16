@@ -47,8 +47,8 @@ export default function Chart() {
   };
 
   return (
-    <div className="h-[80vh] w-full flex items-center justify-center bg-gray-100">
-      <div className="h-full bg-white p-6 rounded-xl shadow-lg">
+    <div className="h-[80vh] w-full flex items-center justify-center ">
+      <div className="h-full  p-6 rounded-xl shadow-lg">
         <PolarArea data={data} options={options} />
       </div>
     </div>

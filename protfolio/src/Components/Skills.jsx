@@ -23,7 +23,7 @@ function Cylinder() {
 
 function Skills() {
   return (
-    <div className='h-[80vh] w-full flex items-center justify-center bg-gray-100'>
+    <div className='h-[80vh] w-full flex items-center justify-center '>
 
    
     <div className='h-full w-[80%] animate-bounce' >

@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&family=Nabla&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Martian+Mono:wght@100..800&family=Nabla&display=swap');
 
 
 
@@ -33,6 +30,7 @@
 @theme {
      --font-nabla: "Nabla", sans-serif;
   --font-martian: "Martian Mono", monospace;
+  --font-kode: "Kode Mono", monospace;
   --font-zentry: "zentry", sans-serif;
   --font-general: "general", sans-serif;
   --font-circular-web: "circular-web", sans-serif;
