@@ -27,7 +27,7 @@ function About() {
             </div>
             <div className="div  w-[45%] flex items-center justify-center center ">
               
-              <p className='text-white font-circular-web text-[2vw] text-shadow-[2px_2px_22px_rgba(0,0,250,0.8)] hover:text-shadow-[2px_2px_25px_rgba(0,0,250,1)]'>Hi, I’m <h1 className='text-blue-500 text-5xl font-zentry text-shadow-none '>Vansh Gupta </h1>—a passionate Front-End Developer and an aspiring Full Stack Developer. I enjoy building sleek, user-friendly web experiences using modern technologies while constantly expanding my skills in data science and analytics. My goal is to combine design, code, and data-driven insights to create solutions that are both functional and impactful.</p>
+              <p className='text-white font-nabla text-[2vw] hover:text-shadow-[2px_2px_25px_rgba(0,0,0,1)]'>Hi, I’m <h1 className='text-blue-500 text-5xl  text-shadow-none '>Vansh Gupta </h1>—a passionate Front-End Developer and an aspiring Full Stack Developer. I enjoy building sleek, user-friendly web experiences using modern technologies while constantly expanding my skills in data science and analytics. My goal is to combine design, code, and data-driven insights to create solutions that are both functional and impactful.</p>
             </div>
     </div>
   )
